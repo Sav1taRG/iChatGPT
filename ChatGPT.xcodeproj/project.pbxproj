@@ -7,18 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30662A5C29B50B1A00C9AE57 /* ChatGptToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30662A5B29B50B1A00C9AE57 /* ChatGptToken.swift */; };
 		30BB59DA298B0113000DA602 /* ChatGPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB59D9298B0113000DA602 /* ChatGPTApp.swift */; };
-		30BB59DC298B0113000DA602 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB59DB298B0113000DA602 /* ContentView.swift */; };
+		30BB59DC298B0113000DA602 /* ChatGptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB59DB298B0113000DA602 /* ChatGptView.swift */; };
 		30BB59DE298B0115000DA602 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30BB59DD298B0115000DA602 /* Assets.xcassets */; };
 		30BB59E1298B0115000DA602 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30BB59E0298B0115000DA602 /* Preview Assets.xcassets */; };
+		30BB59EC298EDF3D000DA602 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 30BB59EB298EDF3D000DA602 /* OpenAISwift */; };
+		30BB59EE298EDFC7000DA602 /* ChatGptViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB59ED298EDFC7000DA602 /* ChatGptViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30662A5B29B50B1A00C9AE57 /* ChatGptToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGptToken.swift; sourceTree = "<group>"; };
 		30BB59D6298B0113000DA602 /* ChatGPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatGPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30BB59D9298B0113000DA602 /* ChatGPTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTApp.swift; sourceTree = "<group>"; };
-		30BB59DB298B0113000DA602 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		30BB59DB298B0113000DA602 /* ChatGptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGptView.swift; sourceTree = "<group>"; };
 		30BB59DD298B0115000DA602 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30BB59E0298B0115000DA602 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		30BB59ED298EDFC7000DA602 /* ChatGptViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGptViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30BB59EC298EDF3D000DA602 /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +58,9 @@
 			isa = PBXGroup;
 			children = (
 				30BB59D9298B0113000DA602 /* ChatGPTApp.swift */,
-				30BB59DB298B0113000DA602 /* ContentView.swift */,
+				30BB59DB298B0113000DA602 /* ChatGptView.swift */,
+				30BB59ED298EDFC7000DA602 /* ChatGptViewModel.swift */,
+				30662A5B29B50B1A00C9AE57 /* ChatGptToken.swift */,
 				30BB59DD298B0115000DA602 /* Assets.xcassets */,
 				30BB59DF298B0115000DA602 /* Preview Content */,
 			);
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = ChatGPT;
+			packageProductDependencies = (
+				30BB59EB298EDF3D000DA602 /* OpenAISwift */,
+			);
 			productName = ChatGPT;
 			productReference = 30BB59D6298B0113000DA602 /* ChatGPT.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 30BB59CD298B0113000DA602;
+			packageReferences = (
+				30BB59EA298EDF3D000DA602 /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+			);
 			productRefGroup = 30BB59D7298B0113000DA602 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30BB59DC298B0113000DA602 /* ContentView.swift in Sources */,
+				30BB59EE298EDFC7000DA602 /* ChatGptViewModel.swift in Sources */,
+				30662A5C29B50B1A00C9AE57 /* ChatGptToken.swift in Sources */,
+				30BB59DC298B0113000DA602 /* ChatGptView.swift in Sources */,
 				30BB59DA298B0113000DA602 /* ChatGPTApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,8 +289,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,9 +298,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = RG.ChatGPT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,8 +321,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,9 +330,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = RG.ChatGPT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -339,6 +361,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		30BB59EA298EDF3D000DA602 /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		30BB59EB298EDF3D000DA602 /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 30BB59EA298EDF3D000DA602 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 30BB59CE298B0113000DA602 /* Project object */;
 }

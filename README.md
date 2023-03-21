@@ -1,7 +1,7 @@
 <br/>
 <p align="center">
   <a href="https://github.com/Sav1taRG/iChatGPT">
-    <img src="https://github.com/Sav1taRG/iChatGPT/blob/master/ChatGPT/Assets.xcassets/AppIcon.appiconset/chatgpt-seeklogo.com.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/Sav1taRG/iChatGPT/blob/master/ChatGPT/Assets.xcassets/AppIcon.appiconset/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">iChatGPT</h3>

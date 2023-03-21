@@ -45,7 +45,7 @@ struct ChatGptView: View {
                     } else {
                         let newMessage = message.replacingOccurrences(
                             of: "\n\n",
-                            with: " "
+                            with: ""
                         )
                         HStack {
                             Text(newMessage)

@@ -203,5 +203,6 @@ xcuserdata
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
+ChatGpt/ChatGptToken.swift
 
 # End of https://www.toptal.com/developers/gitignore/api/swift,xcode,swiftpackagemanagery/Mobile Documents/com~apple~CloudDocs/Swift/ChatGPT/ChatGPT

@@ -33,7 +33,7 @@ SwiftUI-приложение для iOS, iPadOS и macOS, реализующее
 - Язык: Swift  
 - UI: SwiftUI  
 - Архитектура: MVVM / reactive (`@State`, `@StateObject`, `ObservableObject`)  
-- Сеть: работа с неофициальным API ChatGPT через `backend-api/conversation`, поддержка стриминга ответов и синхронизация истории citeturn0search8.
+- Сеть: работа с неофициальным API ChatGPT через `backend-api/conversation`, поддержка стриминга ответов и синхронизация истории.
 
 ---
 
